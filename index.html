@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма обратной связи</title>
+  <link rel="stylesheet" href="body {.css">
+<body>
+
+<form>
+  <label for="name">Имя</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Электронная почта</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Телефон</label>
+  <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+
+  <label for="subject">Тема сообщения</label>
+  <select id="subject" name="subject" required>
+    <option value="" disabled selected>Выберите тему</option>
+    <option value="question">Вопрос</option>
+    <option value="suggestion">Предложение</option>
+    <option value="complaint">Жалоба</option>
+  </select>
+
+  <label for="message">Сообщение</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <div class="radio-group">
+    <span>Способ связи</span><br>
+    <label>
+      <input type="radio" name="contactMethod" value="email" required> Email
+    </label>
+    <label>
+      <input type="radio" name="contactMethod" value="phone"> Телефон
+    </label>
+  </div>
+
+  <div class="checkbox-group">
+    <label>
+      <input type="checkbox" name="consent" required> Согласен с обработкой персональных данных
+    </label>
+  </div>
+
+  <div class="buttons">
+    <button type="submit">Отправить</button>
+    <button type="reset">Сбросить</button>
+  </div>
