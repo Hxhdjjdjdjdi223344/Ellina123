@@ -92,27 +92,18 @@ main {
     color: rgb(241, 197, 14);
 }
 
-/* Hover эффекты для карточек */
+
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
+
 
 .card_link {
     transition: color 0.3s ease, text-decoration-color 0.3s ease;
 }
 
-.card_link:hover {
-    color: rgb(241, 197, 14);
-    text-decoration-color: #000;
-}
-
-/* Адаптивность */
 @media (max-width: 1200px) {
     body {
         padding: 40px 60px;
