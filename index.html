@@ -1,49 +1,54 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Форма обратной связи</title>
-  <link rel="stylesheet" href="body {.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Template</title>
+</head>
 <body>
+    <header>
+        <h1 class="header_title">Design and Development</h1>
+    </header>
 
-<form>
-  <label for="name">Имя</label>
-  <input type="text" id="name" name="name" required>
+    <main>
+        <article class="card">
+            <h2 class="card_number">01</h2>
+            <p class="card_text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="card_link">Learn more</a>
+        </article>
+        <article class="card">
+            <h2 class="card_number">02</h2>
+            <p class="card_text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="card_link">Learn more</a>
+        </article>
+        <article class="card">
+            <h2 class="card_number">03</h2>
+            <p class="card_text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="card_link">Learn more</a>
+        </article>
+        <article class="card">
+            <h2 class="card_number">04</h2>
+            <p class="card_text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="card_link">Learn more</a>
+        </article>
+        <article class="card">
+            <h2 class="card_number">05</h2>
+            <p class="card_text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="card_link">Learn more</a>
+        </article>
+        <article class="card">
+            <h2 class="card_number">06</h2>
+            <p class="card_text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="card_link">Learn more</a>
+        </article>
+    </main>
+    <footer>
+        <p class="footer_text">Image by <a class="footer_link" href="https://www.freepik.com/photos/people" target="_blank">Freepik</a></p>
+    </footer>
 
-  <label for="email">Электронная почта</label>
-  <input type="email" id="email" name="email" required>
-
-  <label for="phone">Телефон</label>
-  <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
-
-  <label for="subject">Тема сообщения</label>
-  <select id="subject" name="subject" required>
-    <option value="" disabled selected>Выберите тему</option>
-    <option value="question">Вопрос</option>
-    <option value="suggestion">Предложение</option>
-    <option value="complaint">Жалоба</option>
-  </select>
-
-  <label for="message">Сообщение</label>
-  <textarea id="message" name="message" required></textarea>
-
-  <div class="radio-group">
-    <span>Способ связи</span><br>
-    <label>
-      <input type="radio" name="contactMethod" value="email" required> Email
-    </label>
-    <label>
-      <input type="radio" name="contactMethod" value="phone"> Телефон
-    </label>
-  </div>
-
-  <div class="checkbox-group">
-    <label>
-      <input type="checkbox" name="consent" required> Согласен с обработкой персональных данных
-    </label>
-  </div>
-
-  <div class="buttons">
-    <button type="submit">Отправить</button>
-    <button type="reset">Сбросить</button>
-  </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 100px;
+    background-image: url(https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/1f33596e29405333bdbf2bb0/hgghgh-min1.jpg);
+}
+
+.header_title {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.card_number {
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(241, 197, 14);
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.card_text {
+    font-size: 16px;
+    font-style: italic;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.card_link {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: rgb(241, 197, 14);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.footer_text {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.footer_link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer_link:hover {
+    color: rgb(241, 197, 14);
+}
+
+/* Hover эффекты для карточек */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card_link {
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.card_link:hover {
+    color: rgb(241, 197, 14);
+    text-decoration-color: #000;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    body {
+        padding: 40px 60px;
+    }
+    
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+    
+    .header_title {
+        font-size: 45px;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 280px;
+    }
+    
+    main {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+    
+    .header_title {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+    
+    .card {
+        padding: 20px 15px;
+        min-height: 250px;
+    }
+    
+    .card_number {
+        font-size: 50px;
+    }
+    
+    .card_text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header_title {
+        font-size: 28px;
+    }
+    
+    .card {
+        padding: 15px 10px;
+        min-height: 220px;
+    }
+    
+    .card_number {
+        font-size: 40px;
+    }
+}
